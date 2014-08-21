@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+	<named-config name="GoldenData">  
+        <property name="jdbcUrl">jdbc:jtds:sqlserver://GARawQADB81;user=shou;password=Hjg15926223882..;domain=MSDOMAIN1</property>  
+        <property name="driverClass">net.sourceforge.jtds.jdbc.Driver</property>  
+        <property name="user"></property>  
+        <property name="password"></property>  		
+		<property name="minPoolSize">1</property>
+		<property name="maxPoolSize">2</property>
+		<property name="maxIdleTime">30</property>>
+		<property name="acquireIncrement">5</property>
+		<property name="initialPoolSize">1</property>
+		<property name="idleConnectionTestPeriod">60</property>
+    </named-config>
+	<!-- OIDEVDB81\OIDEVOUTPUTDB81  database = CurrentData -->  
+    <named-config name="MsSql1">  
+        <property name="jdbcUrl">jdbc:jtds:sqlserver://OIDEVDB81;instance=OIDEVOUTPUTDB81;DatabaseName=CurrentData;user=shou;password=Hjg15926223882;domain=MSDOMAIN1</property>  
+        <property name="driverClass">net.sourceforge.jtds.jdbc.Driver</property>  
+        <property name="user"></property>  
+        <property name="password"></property>  
+  
+ 		
+		<property name="minPoolSize">1</property>
+		<property name="maxPoolSize">2</property>
+		<property name="maxIdleTime">30</property>>
+		<property name="acquireIncrement">5</property>
+		<property name="initialPoolSize">1</property>
+		<property name="idleConnectionTestPeriod">60</property>
+ 		
+        <!--<property name="checkoutTimeout">30000</property>  
+        <property name="idleConnectionTestPeriod">30</property>  
+        <property name="initialPoolSize">10</property>  
+        <property name="maxIdleTime">30</property>  
+        <property name="maxPoolSize">100</property>  
+        <property name="minPoolSize">10</property>  
+        <property name="maxStatements">200</property>-->  
+    </named-config>
+    <!-- geoutputdb61 -->
+    <named-config name="MsSql2">  
+        <property name="jdbcUrl">jdbc:jtds:sqlserver://geoutputdb61</property>  
+        <property name="driverClass">net.sourceforge.jtds.jdbc.Driver</property>  
+        <property name="user">MLClient</property>  
+        <property name="password">MLClient</property>  
+  		
+ 		<property name="minPoolSize">1</property>
+		<property name="maxPoolSize">2</property>
+		<property name="maxIdleTime">30</property>>
+		<property name="acquireIncrement">5</property>
+		<property name="initialPoolSize">1</property>
+		<property name="idleConnectionTestPeriod">60</property>
+        
+        <!--<property name="checkoutTimeout">30000</property>  
+        <property name="idleConnectionTestPeriod">30</property>  
+        <property name="initialPoolSize">10</property>  
+        <property name="maxIdleTime">30</property>  
+        <property name="maxPoolSize">100</property>  
+        <property name="minPoolSize">10</property>  
+        <property name="maxStatements">200</property>-->  
+    </named-config>
+    <!-- DevMSPerformDB1 -->
+    <named-config name="MsSql3">  
+        <property name="jdbcUrl">jdbc:jtds:sqlserver://pdcalcdb61</property>  
+        <property name="driverClass">net.sourceforge.jtds.jdbc.Driver</property>  
+        <property name="user">QAReader</property>  
+        <property name="password">a9Vdi56C</property>  
+ 
+		<property name="minPoolSize">1</property>
+		<property name="maxPoolSize">2</property>
+		<property name="maxIdleTime">30</property>>
+		<property name="acquireIncrement">5</property>
+		<property name="initialPoolSize">1</property>
+		<property name="idleConnectionTestPeriod">60</property>
+        
+        <!--<property name="checkoutTimeout">30000</property>  
+        <property name="idleConnectionTestPeriod">30</property>  
+        <property name="initialPoolSize">10</property>  
+        <property name="maxIdleTime">30</property>  
+        <property name="maxPoolSize">100</property>  
+        <property name="minPoolSize">10</property>  
+        <property name="maxStatements">200</property>-->
+   </named-config>     
+        
+    <!-- dmdevdb81 -->
+    <named-config name="MsSql4">  
+        <property name="jdbcUrl">jdbc:jtds:sqlserver://dmdevdb81;instance=dminputdbdev</property>  
+        <property name="driverClass">net.sourceforge.jtds.jdbc.Driver</property>  
+        <property name="user">DMClient</property>  
+        <property name="password">72vnQE*db]</property>  
+ 
+		<property name="minPoolSize">1</property>
+		<property name="maxPoolSize">2</property>
+		<property name="maxIdleTime">30</property>>
+		<property name="acquireIncrement">5</property>
+		<property name="initialPoolSize">1</property>
+		<property name="idleConnectionTestPeriod">60</property>  
+    </named-config>
+   
+    
+    <named-config name="MySQL1">  
+        <property name="jdbcUrl">jdbc:jtds:sqlserver://OIDEVDB81;instance=OIDEVOUTPUTDB81;DatabaseName=CurrentData;user=shou;password=Hjg15926223882;domain=MSDOMAIN1</property>  
+        <property name="driverClass">com.vertica.jdbc.Driver</property>  
+        <property name="user"></property>  
+        <property name="password"></property>  
+  		
+  		<property name="minPoolSize">1</property>
+		<property name="maxPoolSize">2</property>
+		<property name="maxIdleTime">30</property>>
+		<property name="acquireIncrement">5</property>
+		<property name="initialPoolSize">1</property>
+		<property name="idleConnectionTestPeriod">60</property>
+        
+        <!--<property name="checkoutTimeout">30000</property>  
+        <property name="idleConnectionTestPeriod">30</property>  
+        <property name="initialPoolSize">10</property>  
+        <property name="maxIdleTime">30</property>  
+        <property name="maxPoolSize">100</property>  
+        <property name="minPoolSize">10</property>  
+        <property name="maxStatements">200</property>-->  
+    </named-config>
+    <named-config name="MySQL2">  
+        <property name="jdbcUrl">jdbc:jtds:sqlserver://OIDEVDB81;instance=OIDEVOUTPUTDB81;DatabaseName=CurrentData;user=shou;password=Hjg15926223882;domain=MSDOMAIN1</property>  
+        <property name="driverClass">com.vertica.jdbc.Driver</property>  
+        <property name="user"></property>  
+        <property name="password"></property>  
+  		
+  		<property name="minPoolSize">1</property>
+		<property name="maxPoolSize">2</property>
+		<property name="maxIdleTime">30</property>>
+		<property name="acquireIncrement">5</property>
+		<property name="initialPoolSize">1</property>
+		<property name="idleConnectionTestPeriod">60</property>
+		
+        <!--<property name="checkoutTimeout">30000</property>  
+        <property name="idleConnectionTestPeriod">30</property>  
+        <property name="initialPoolSize">10</property>  
+        <property name="maxIdleTime">30</property>  
+        <property name="maxPoolSize">100</property>  
+        <property name="minPoolSize">10</property>  
+        <property name="maxStatements">200</property>-->  
+    </named-config>
+    <named-config name="MySQL3">  
+        <property name="jdbcUrl">jdbc:jtds:sqlserver://OIDEVDB81;instance=OIDEVOUTPUTDB81;DatabaseName=CurrentData;user=shou;password=Hjg15926223882;domain=MSDOMAIN1</property>  
+        <property name="driverClass">com.vertica.jdbc.Driver</property>  
+        <property name="user"></property>  
+        <property name="password"></property>  
+  		
+  		<property name="minPoolSize">1</property>
+		<property name="maxPoolSize">2</property>
+		<property name="maxIdleTime">30</property>>
+		<property name="acquireIncrement">5</property>
+		<property name="initialPoolSize">1</property>
+		<property name="idleConnectionTestPeriod">60</property>
+		
+        <!--<property name="checkoutTimeout">30000</property>  
+        <property name="idleConnectionTestPeriod">30</property>  
+        <property name="initialPoolSize">10</property>  
+        <property name="maxIdleTime">30</property>  
+        <property name="maxPoolSize">100</property>  
+        <property name="minPoolSize">10</property>  
+        <property name="maxStatements">200</property>-->  
+    </named-config>
+    
+    
+    <!-- Vertica Staging环境 -->
+    <named-config name="VerticaSTG">  
+        <property name="jdbcUrl">jdbc:vertica://vertstg:5433/</property>  
+        <property name="driverClass">com.vertica.jdbc.Driver</property>  
+        <property name="user">TSWriter</property>  
+        <property name="password">write1DB$TS</property>  
+  		
+  		<property name="minPoolSize">1</property>
+		<property name="maxPoolSize">2</property>
+		<property name="maxIdleTime">30</property>>
+		<property name="acquireIncrement">5</property>
+		<property name="initialPoolSize">1</property>
+		<property name="idleConnectionTestPeriod">60</property>
+		
+        <!--<property name="checkoutTimeout">30000</property>  
+        <property name="idleConnectionTestPeriod">30</property>  
+        <property name="initialPoolSize">10</property>  
+        <property name="maxIdleTime">30</property>  
+        <property name="maxPoolSize">100</property>  
+        <property name="minPoolSize">10</property>  
+        <property name="maxStatements">200</property>-->  
+    </named-config>
+    <!-- Vertica Production环境 -->
+    <named-config name="VerticaPROD">  
+        <property name="jdbcUrl">jdbc:vertica://vertprod:5433/</property>  
+        <property name="driverClass">com.vertica.jdbc.Driver</property>  
+        <property name="user">tswriter</property>  
+        <property name="password">MB1O1zR9&lt;u)T</property>  
+  		
+  		<property name="minPoolSize">1</property>
+		<property name="maxPoolSize">2</property>
+		<property name="maxIdleTime">30</property>>
+		<property name="acquireIncrement">5</property>
+		<property name="initialPoolSize">1</property>
+		<property name="idleConnectionTestPeriod">30</property>
+		
+        <!--<property name="checkoutTimeout">30000</property>  
+        <property name="idleConnectionTestPeriod">30</property>  
+        <property name="initialPoolSize">10</property>  
+        <property name="maxIdleTime">30</property>  
+        <property name="maxPoolSize">100</property>  
+        <property name="minPoolSize">10</property>  
+        <property name="maxStatements">200</property>-->  
+    </named-config>
+    <!-- VerticaQA环境 --> 
+       <named-config name="VerticaQA">  
+        <property name="jdbcUrl">jdbc:vertica://vertqa:5433/</property>  
+        <property name="driverClass">com.vertica.jdbc.Driver</property>  
+        <property name="user">dbadmin</property>  
+        <property name="password"></property>  
+  		
+  		<property name="minPoolSize">1</property>
+		<property name="maxPoolSize">2</property>
+		<property name="maxIdleTime">30</property>>
+		<property name="acquireIncrement">5</property>
+		<property name="initialPoolSize">1</property>
+		<property name="idleConnectionTestPeriod">30</property>
+		
+        <!--<property name="checkoutTimeout">30000</property>  
+        <property name="idleConnectionTestPeriod">30</property>  
+        <property name="initialPoolSize">10</property>  
+        <property name="maxIdleTime">30</property>  
+        <property name="maxPoolSize">100</property>  
+        <property name="minPoolSize">10</property>  
+        <property name="maxStatements">200</property>-->  
+    </named-config>
+    <!-- NetezzaDev环境 --> 
+       <named-config name="NetezzaQA">  
+        <property name="jdbcUrl">jdbc:netezza://Msibmnetezza81vipdata:5480/MSNZDEV/</property>  
+        <property name="driverClass">org.netezza.Driver</property>  
+        <property name="user">shou</property>  
+        <property name="password">shouqa</property>  
+  		
+  		<property name="minPoolSize">1</property>
+		<property name="maxPoolSize">2</property>
+		<property name="maxIdleTime">30</property>>
+		<property name="acquireIncrement">5</property>
+		<property name="initialPoolSize">1</property>
+		<property name="idleConnectionTestPeriod">30</property> 
+    </named-config>
+    <!-- NetezzaSTG环境 --> 
+       <named-config name="NetezzaSTG">  
+        <property name="jdbcUrl">jdbc:netezza://</property>  
+        <property name="driverClass">org.netezza.Driver</property>  
+        <property name="user"></property>  
+        <property name="password"></property>  
+  		
+  		<property name="minPoolSize">1</property>
+		<property name="maxPoolSize">2</property>
+		<property name="maxIdleTime">30</property>>
+		<property name="acquireIncrement">5</property>
+		<property name="initialPoolSize">1</property>
+		<property name="idleConnectionTestPeriod">30</property> 
+    </named-config>
+    <!-- NetezzaProd环境 --> 
+       <named-config name="NetezzaPROD">  
+        <property name="jdbcUrl">jdbc:netezza://</property>  
+        <property name="driverClass">org.netezza.Driver</property>  
+        <property name="user"></property>  
+        <property name="password"></property>  
+  		
+  		<property name="minPoolSize">1</property>
+		<property name="maxPoolSize">2</property>
+		<property name="maxIdleTime">30</property>>
+		<property name="acquireIncrement">5</property>
+		<property name="initialPoolSize">1</property>
+		<property name="idleConnectionTestPeriod">30</property> 
+    </named-config>    
+</c3p0-config>
